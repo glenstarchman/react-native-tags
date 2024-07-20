@@ -112,12 +112,14 @@ class Tags extends React.Component {
         {!readonly
           && maxNumberOfTags > this.state.tags.length
           &&
+         <View>
           <Input
             value={this.state.text}
             onChangeText={this.onChangeText}
             onSubmitEditing={this.onSubmitEditing}
             {...this.props}
           />
+         </View>
         }
 
       </View>
